@@ -1,2 +1,26 @@
+# Git LFS configuration for large files
+# This file tells Git which files should be managed by Git LFS
+
+# Zip files (common for datasets and compressed models)
 *.zip filter=lfs diff=lfs merge=lfs -text
+# PDF files (common for documentation and papers)
 *.pdf filter=lfs diff=lfs merge=lfs -text
+# Video files (common for deep learning demos)
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.avi filter=lfs diff=lfs merge=lfs -text
+# Model files (common for trained models)
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.hdf5 filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.pickle filter=lfs diff=lfs merge=lfs -text
+# Data files (common for datasets)
+*.npy filter=lfs diff=lfs merge=lfs -text
+*.npz filter=lfs diff=lfs merge=lfs -text
+*.mat filter=lfs diff=lfs merge=lfs -text
+# Image files (large images)
+*.tiff filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
